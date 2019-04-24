@@ -1,0 +1,237 @@
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+void ttone(int a,int b,int c)
+{
+  tone(a,b,c);
+  delay(c);
+  noTone(a);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(Serial.available())
+  {
+    char chr=Serial.read();
+    Serial.println(chr);
+    if(chr>='A' && chr<='Z')
+    {
+      switch(chr)
+      {
+        case 'A':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            break;
+        case 'B':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            break;
+        case 'C':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'D':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'E':
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'F':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'G':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'H':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'I':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'J':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'K':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'L':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'M':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'N':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+        case 'O':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'P':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'Q':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+        case 'R':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'S':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+        case 'T':
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'U':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'V':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'W':
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'X':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+        case 'Y':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            break;
+       case 'Z':
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,300);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            ttone(8,440,100);
+            delay(100);
+            break;
+      }
+    }
+  }
+}
